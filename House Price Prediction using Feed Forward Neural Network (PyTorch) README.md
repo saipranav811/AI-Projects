@@ -28,6 +28,8 @@ Total Years: The total age of the property (calculated as current year - year bu
 
 SalePrice: The target variable (property sale price)
 
+
+
 Data Preprocessing
 
 The following steps were taken to prepare the data:
@@ -39,7 +41,10 @@ Transformed categorical features (MSSubClass, MSZoning, Street, LotShape) using 
 Converted continuous and categorical features to tensors, a necessary step for working with PyTorch models.
 Calculated Total Years to replace the YearBuilt feature.
 
+
+
 Model Architecture
+
 The FFNN architecture includes:
 
 Embedding Layers: For handling categorical features, which are embedded into continuous vector space.
@@ -51,6 +56,9 @@ Dropout Layers: To prevent overfitting by randomly setting a fraction of input u
 ReLU Activation: For introducing non-linearity.
 
 Fully Connected Layers: Three fully connected layers that gradually reduce the dimensions from input to output.
+
+
+
 
 Embedding Size for Categorical Columns
 
@@ -64,14 +72,20 @@ Street: 2 unique values → embedding size: (2, 1)
 
 LotShape: 4 unique values → embedding size: (4, 2)
 
+
+
 Model Training
 
 The model was trained using Mean Squared Error (MSE) as the loss function and Adam Optimizer with a learning rate of 0.01.
 The training process ran for 5000 epochs with periodic logging of loss.
 
+
+
 Model Evaluation
 
 The model achieved an RMSE of ~45,899 on the test set, indicating the performance on unseen data.
+
+
 
 Conclusion
 
