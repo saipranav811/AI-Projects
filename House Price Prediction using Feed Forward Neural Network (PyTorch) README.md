@@ -93,6 +93,3 @@ This project demonstrates how to build a deep learning model for house price pre
 
 
 
-Conclusion
-
-This project demonstrates how to build a deep learning model for house price prediction using PyTorch, leveraging embeddings for categorical data, batch normalization, and dropout to create a robust and scalable model. Despite some challenges with model accuracy, the RMSE results provide a solid starting point for further improvements and hyperparameter tuning.
