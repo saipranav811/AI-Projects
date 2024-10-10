@@ -5,24 +5,37 @@ Overview
 This project builds a Feed Forward Neural Network (FFNN) using PyTorch to predict house prices based on various features such as lot size, year built, and square footage. The dataset used is a subset of the well-known Ames Housing Dataset and includes both categorical and continuous features.
 
 Dataset
+
 The dataset contains the following features:
 
 MSSubClass: The building class
+
 MSZoning: The general zoning classification
+
 LotFrontage: Linear feet of street connected to the property
+
 LotArea: Lot size in square feet
+
 Street: Type of road access
+
 LotShape: General shape of the property
+
 1stFlrSF: First-floor square footage
+
 2ndFlrSF: Second-floor square footage
+
 Total Years: The total age of the property (calculated as current year - year built)
+
 SalePrice: The target variable (property sale price)
 
 Data Preprocessing
+
 The following steps were taken to prepare the data:
 
 Dropped rows with missing values to ensure clean data.
+
 Transformed categorical features (MSSubClass, MSZoning, Street, LotShape) using Label Encoding.
+
 Converted continuous and categorical features to tensors, a necessary step for working with PyTorch models.
 Calculated Total Years to replace the YearBuilt feature.
 
