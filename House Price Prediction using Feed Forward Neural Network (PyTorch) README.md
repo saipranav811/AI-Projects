@@ -1,6 +1,7 @@
 #House Price Prediction using Feed Forward Neural Network (PyTorch)
 
 Overview
+
 This project builds a Feed Forward Neural Network (FFNN) using PyTorch to predict house prices based on various features such as lot size, year built, and square footage. The dataset used is a subset of the well-known Ames Housing Dataset and includes both categorical and continuous features.
 
 Dataset
