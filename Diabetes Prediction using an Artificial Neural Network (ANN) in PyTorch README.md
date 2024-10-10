@@ -1,8 +1,10 @@
 # Diabetes Prediction using an Artificial Neural Network (ANN) in PyTorch
-Overview
+## Overview
+
 In this project, I built an Artificial Neural Network (ANN) using PyTorch to predict diabetes outcomes based on the Pima Indians Diabetes Dataset. The dataset contains various medical parameters like glucose levels, BMI, age, and more to predict whether a person is likely to have diabetes (binary outcome: 0 or 1).
 
-Dataset
+### Dataset
+
 The dataset used was the Pima Indians Diabetes Database. It includes the following features:
 
 Pregnancies: Number of times pregnant
@@ -15,7 +17,8 @@ DiabetesPedigreeFunction: Diabetes pedigree function (a score indicating the lik
 Age: Age of the patient
 Outcome: 0 for non-diabetic, 1 for diabetic (target variable)
 
-Steps
+#### Steps
+
 1. Data Preprocessing
 Imported the dataset and checked for null values using df.isnull().sum(). No missing values were found.
 Split the data into input features (X) and the target label (y).
@@ -40,7 +43,8 @@ Accuracy score achieved was 33.12%, which suggests that the model requires furth
 6. Saving the Model
 Saved the trained model using torch.save() and loaded it using torch.load() to evaluate it again.
 
-Results
+##### Results
+
 Despite training the ANN model, the accuracy score of 33.12% and the confusion matrix indicate that the model struggles with high false positives and false negatives. Further improvements could be made by:
 
 Tuning hyperparameters such as learning rate, hidden layers, or units.
