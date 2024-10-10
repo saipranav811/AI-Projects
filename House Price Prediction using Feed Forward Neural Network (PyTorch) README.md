@@ -1,10 +1,10 @@
-#House Price Prediction using Feed Forward Neural Network (PyTorch)
+# House Price Prediction using Feed Forward Neural Network (PyTorch)
 
-Overview
+## Overview
 
 This project builds a Feed Forward Neural Network (FFNN) using PyTorch to predict house prices based on various features such as lot size, year built, and square footage. The dataset used is a subset of the well-known Ames Housing Dataset and includes both categorical and continuous features.
 
-Dataset
+### Dataset
 
 The dataset contains the following features:
 
@@ -30,7 +30,7 @@ SalePrice: The target variable (property sale price)
 
 
 
-Data Preprocessing
+#### Data Preprocessing
 
 The following steps were taken to prepare the data:
 
@@ -43,7 +43,7 @@ Calculated Total Years to replace the YearBuilt feature.
 
 
 
-Model Architecture
+##### Model Architecture
 
 The FFNN architecture includes:
 
@@ -60,7 +60,7 @@ Fully Connected Layers: Three fully connected layers that gradually reduce the d
 
 
 
-Embedding Size for Categorical Columns
+###### Embedding Size for Categorical Columns
 
 Categorical columns were embedded as follows:
 
@@ -74,16 +74,22 @@ LotShape: 4 unique values → embedding size: (4, 2)
 
 
 
-Model Training
+###### Model Training
 
 The model was trained using Mean Squared Error (MSE) as the loss function and Adam Optimizer with a learning rate of 0.01.
 The training process ran for 5000 epochs with periodic logging of loss.
 
 
 
-Model Evaluation
+###### Model Evaluation
 
 The model achieved an RMSE of ~45,899 on the test set, indicating the performance on unseen data.
+
+###### Conclusion
+
+This project demonstrates how to build a deep learning model for house price prediction using PyTorch, leveraging embeddings for categorical data, batch normalization, and dropout to create a robust and scalable model. Despite some challenges with model accuracy, the RMSE results provide a solid starting point for further improvements and hyperparameter tuning.
+
+
 
 
 
